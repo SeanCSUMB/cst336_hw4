@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') %>
+        <header>
+            <h1>Subnet Facts</h1><br>
+            <h2>IP addresses help identify the hosts and routers!</h2>
+        </header>
+        <hr>
+        
+        <nav>
+            <a href="/">Home</a>
+            <a href="/ip"><b>IP Addresses</b></a>
+            <a href="/routes">Physical Routes</a>
+            <a href="/switch">Role of a Switch</a>
+        </nav>
+        
+        <main>
+            
+            <figure>
+                <img src="/img/subnetmask.gif" width="500" alt="A diagram explaining how subnet masks work.">
+                <br>Source and image source: <a href="https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html">https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html</a><br>
+            </figure>
+            
+            <div>
+                <br>Welcome to the IP Addressing page!<br>
+                <p>Each host in a network, including in a subnet, needs an IP address. However, each subnet needs its own IP address as well.</p>
+                <p>This division is accounted for by the use of a subnet mask. An IPv4 address consists of 32 bits, so a subnet mask determines how many bits are used for the subnet and
+                how many are used for the individual hosts. This is formatted like <samp>#.#.#.#/#</samp>, with the last number being the mask; this is the number of bits used for the subnet. Thus,
+                32 - the mask is the number of bits used for the hosts. The mask should be picked based on the number of hosts that the network is expected to contain; a higher mask
+                means fewer hosts.</p>
+                <br>
+            </div>
+            
+        </main>
+        
+        <%- include('partials/footer.ejs', {fakeData:fakeData})%>

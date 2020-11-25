@@ -1,0 +1,59 @@
+body{
+    background-color:gray;
+    color:black;
+    font-size: 1.1em;
+}
+
+header, main, nav, footer, div{
+    text-align: center;
+}
+
+nav a{ /*this is a CSS comment*/
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color:blue;
+}
+
+nav a:hover {
+    font-size: 2em;
+    transition: .9s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    font-size: .7em;
+    color:black;
+}
+
+table{
+    margin: 0px auto;
+}
+
+td{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+td strong{
+    color: orange;
+}
+
+h1{
+    font-family: 'Turret Road', cursive;
+    color:blue;
+    text-shadow: 2px 3px black;
+}
+
+h2{
+    color:yellow;
+    outline:2px solid blue;
+}
+
+#finePrint{
+    font-size:.8em;
+}

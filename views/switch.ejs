@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+<header>
+            <h1>Subnet Facts</h1><br>
+            <h2>Switches get data between the hosts!</h2>
+        </header>
+        <hr>
+        
+        <nav>
+            <a href="/">Home</a>
+            <a href="/ip">IP Addresses</a>
+            <a href="/routes">Physical Routes</a>
+            <a href="/switch"><b>Role of a Switch</b></a>
+        </nav>
+        
+        <main>
+            
+            <figure>
+                <img src="/img/network_switch.jpg" width="500" alt="A diagram showing an example of a static route.">
+                <br>Source and image source: <a href="https://geek-university.com/ccna/what-is-a-network-switch/">https://geek-university.com/ccna/what-is-a-network-switch/</a><br>
+            </figure>
+            
+            <div>
+                <br>Welcome to the Switches page!<br>
+                <p>In order to transmit data between the hosts in a subnet, just the IP addresses may not be enough; network switches instead help get the job done!</p>
+                <p>Switches help route data between hosts within a subnet. They should not be confused with routers. When it recieves data, a switch uses a forwarding table to
+                convey the data to the correct port. Routers work with MAC addresses instead of IP addresses. They also ensure that only the correct host receives the data.</p>
+                <br>
+            </div>
+            
+        </main>
+<%- include('partials/footer.ejs', {fakeData:fakeData})%>

@@ -1,0 +1,36 @@
+<%- include('partials/header.ejs') %>
+        
+        <header>
+            <h1>Subnet Facts</h1><br>
+            <h2>Learn about smaller networks of computers!</h2>
+        </header>
+        
+        
+        <hr>
+        
+        <nav>
+            <a href="/"><b>Home</b></a>
+            <a href="/ip">IP Addresses</a>
+            <a href="/routes">Physical Routes</a>
+            <a href="/switch">Role of a Switch</a>
+        </nav>
+        
+        <main>
+            
+            <figure>
+                <img src="/img/subnet1.gif" width="500" alt="A diagram of a subnet.">
+                <figcaption>An example of a subnet.</figcaption>
+                <br>Image source: <a href="http://units.folder101.com/cisco/sem1/Notes/ch10-routing/subnetting.htm">http://units.folder101.com/cisco/sem1/Notes/ch10-routing/subnetting.htm</a><br>
+            </figure>
+            
+            <div>
+                <br>Hello, fellow students!<br>
+                <p><strong>Subnets</strong> are smaller networks that exist within the larger network and can be used to connect smaller numbers of computers together. Feel free to browse the pages and learn more about them!</p>
+                <br>
+            </div>
+            
+        </main>
+
+<%- include('partials/footer.ejs', {fakeData:fakeData})%>
+
+            
